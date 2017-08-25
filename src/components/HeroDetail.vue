@@ -3,17 +3,21 @@
     <h2>{{hero.name}} details!</h2>
     <div>
       <label>id: </label>{{hero.id}}</div>
-
     <div>
       <label>name: </label>
-      <input placeholder="name">
+      <input v-model="hero.name" @change="onChange" placeholder="name">
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['hero']
+  props: ['hero'],
+  methods:{
+    onChange(){
+
+    }
+  }
 }
 </script>
 
