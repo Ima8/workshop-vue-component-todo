@@ -6,14 +6,14 @@
 
     <div>
       <label>name: </label>
-      <input [(ngModel)]="hero.name" placeholder="name">
+      <input placeholder="name">
     </div>
   </div>
 </template>
 
 <script>
 export default {
-
+  props: ['hero']
 }
 </script>
 
