@@ -23,6 +23,7 @@ export default {
       setTimeout(() => {
         this.$emit('changeNameHero', "This is real name")
       }, 1000);
+      this.$emit('updateMessage','New name is '+this.hero.name)
     }
   }
 }
