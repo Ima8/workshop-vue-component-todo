@@ -13,9 +13,16 @@
 <script>
 export default {
   props: ['hero'],
-  methods:{
-    onChange(){
-
+  data() {
+    return {
+      tmpName: ""
+    }
+  },
+  methods: {
+    onChange() {
+      setTimeout(() => {
+        this.$emit('changeNameHero', "This is real name")
+      }, 1000);
     }
   }
 }
